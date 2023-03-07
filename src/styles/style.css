@@ -72,16 +72,16 @@ a {
 
 @media only screen {
     .nav-menu {
+        z-index: 10;
         position: fixed;
         left: -100%;
         top: 5rem;
         flex-direction: column;
-        /* background-color: #1a1d20; */
+        background-color: #1a1d20;
         width: 100%;
         border-radius: 10px;
         text-align: center;
         transition: 0.3s;
-        /* box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); */
     }
 
     .nav-menu.active {
@@ -114,7 +114,8 @@ a {
 
 footer {
     border-top: solid white 1px;
-    position: absolute;
+    background-color: #1a1d20;
+    position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
@@ -133,23 +134,23 @@ body {
     margin: 0rem;
     overflow: hidden;
     color: white;
-  }
-  
-  @keyframes rotate {
+}
+
+@keyframes rotate {
     from {
-      rotate: 0deg;
+        rotate: 0deg;
     }
-    
+
     50% {
-      scale: 1 1.5;
+        scale: 1 1.5;
     }
-    
+
     to {
-      rotate: 360deg;
+        rotate: 360deg;
     }
-  }
-  
-  #blob {
+}
+
+#blob {
     background-color: white;
     height: 15vmax;
     aspect-ratio: 1;
@@ -161,27 +162,40 @@ body {
     background: linear-gradient(to right, aquamarine, mediumpurple);
     animation: rotate 20s infinite;
     opacity: 0.8;
-  }
-  
-  #blur {
+}
+
+#blur {
     height: 100%;
     width: 100%;
-    position: absolute;
+    position: relative;
     z-index: 2;
     backdrop-filter: blur(12vmax);
-  }
-  
-  h1 {
+}
+
+#content {
+    max-height: 80%;
     font-family: 'Space Mono', monospace;
-    font-size: clamp(3rem, 10vw, 10rem);
-    color: white;
-    padding: 0rem clamp(1rem, 2vw, 3rem);
-    border-radius: clamp(0.4rem, 0.75vw, 1rem);
-    margin: 0rem;
+    font-size: 3rem;
+    position: relative;
+    left: 10%;
+    top: 10%;
+    width: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#landing-content {
+    font-family: 'Space Mono', monospace;
+    font-size: 3rem;
     position: absolute;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
-    z-index: 3;
-  }
-  
+}
+
+img {
+    margin: 5px;
+    position: relative;
+    max-width: 100%;
+    height: auto;
+}
