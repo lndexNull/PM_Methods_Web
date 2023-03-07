@@ -199,3 +199,15 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+a:link, a:visited {
+    background-color: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover {
+    color: #482ff7;
+}
