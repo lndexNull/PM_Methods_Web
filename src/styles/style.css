@@ -173,12 +173,12 @@ body {
 }
 
 #content {
-    max-height: 80%;
+    max-height: 85%;
     font-family: 'Space Mono', monospace;
     font-size: 3rem;
     position: relative;
     left: 10%;
-    top: 10%;
+    top: 5%;
     width: 80%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -196,8 +196,8 @@ body {
 img {
     margin: 5px;
     position: relative;
+    max-height: 1000px;
     max-width: 100%;
-    height: auto;
 }
 
 a:link, a:visited {
