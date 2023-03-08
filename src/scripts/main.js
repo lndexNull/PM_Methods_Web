@@ -1,3 +1,5 @@
+/* -- Hamburger menu -- */
+
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
 const navLink = document.querySelectorAll(".nav-link");
@@ -15,7 +17,7 @@ function closeMenu() {
     navMenu.classList.remove("active");
 }
 
-
+/* -- Glow effect -- */
 
 const blob = document.getElementById("blob");
 

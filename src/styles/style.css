@@ -173,7 +173,7 @@ body {
 }
 
 #content {
-    max-height: 85%;
+    max-height: 80%;
     font-family: 'Space Mono', monospace;
     font-size: 3rem;
     position: relative;
